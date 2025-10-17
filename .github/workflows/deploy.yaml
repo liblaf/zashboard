@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Cloudflare
-      url: https://zb.liblaf.me
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -22,10 +21,11 @@ jobs:
         uses: oven-sh/setup-bun@v2
       - name: Install Dependencies
         run: bun install
-      - name: Download Zashboard
+      - name: Build
         run: bash 'scripts/build.sh'
       - if: github.ref == 'refs/heads/main'
         name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
