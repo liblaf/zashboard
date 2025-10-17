@@ -1,2 +1,22 @@
-dist.zip
+# ref: <https://github.com/github/gitignore/blob/main/Node.gitignore>
+
+# shared
+*.log
+*.log.*
+playground/
+
+# Dependency directories
+node_modules/
+
+# Output of 'npm pack'
+*.tgz
+
+# Nuxt.js build / generate output
 dist/
+
+# Cloudflare
+.dev.vars
+.wrangler/
+worker-configuration.d.ts
+
+dist.zip

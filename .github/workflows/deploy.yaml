@@ -18,6 +18,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install Dependencies
+        run: bun install
       - name: Download Zashboard
         run: bash 'scripts/build.sh'
       - if: github.ref == 'refs/heads/main'
