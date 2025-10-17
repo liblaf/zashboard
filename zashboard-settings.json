@@ -1,0 +1,11 @@
+{
+  "config/auto-import-settings": "true",
+  "config/auto-upgrade": true,
+  "config/emoji": "twemoji",
+  "config/font": "SystemUI",
+  "config/group-proxies-by-provider": "true",
+  "config/ipv6-test": true,
+  "config/proxy-sort-type": "latencyasc",
+  "config/speedtest-url": "https://cp.cloudflare.com",
+  "config/truncate-proxy-name": false
+}

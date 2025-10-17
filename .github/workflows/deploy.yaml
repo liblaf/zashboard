@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *" # Runs at 00:00
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: Cloudflare
+      url: https://zb.liblaf.me
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Download Zashboard
+        run: bash 'scripts/build.sh'
+      - if: github.ref == 'refs/heads/main'
+        name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
