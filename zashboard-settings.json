@@ -1,11 +1,13 @@
 {
-  "config/auto-import-settings": "true",
-  "config/auto-upgrade": true,
   "config/emoji": "twemoji",
+  "config/auto-sync-settings": "true",
+  "config/truncate-proxy-name": "false",
+  "config/ipv6-test": "true",
+  "config/display-global-by-mode": "true",
+  "config/auto-upgrade": "true",
   "config/font": "SystemUI",
-  "config/group-proxies-by-provider": "true",
-  "config/ipv6-test": true,
-  "config/proxy-sort-type": "latencyasc",
+  "config/auto-import-settings": "true",
+  "config/show-selected-for-now-node": "true",
   "config/speedtest-url": "https://cp.cloudflare.com",
-  "config/truncate-proxy-name": false
+  "config/independent-latency-test": "true"
 }
