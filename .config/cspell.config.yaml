@@ -13,7 +13,6 @@ ignoreRandomStrings: true
 maxFileSize: 32KB
 useGitignore: true
 words:
-  - geoip
   - liblaf
   - mkdocs
   - oxfmt
