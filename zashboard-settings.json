@@ -3,6 +3,7 @@
   "config/auto-sync-settings": "true",
   "config/truncate-proxy-name": "false",
   "config/ipv6-test": "true",
+  "config/min-proxy-card-width": "256",
   "config/display-global-by-mode": "true",
   "config/auto-upgrade": "true",
   "config/font": "SystemUI",
