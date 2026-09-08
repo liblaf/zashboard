@@ -1,0 +1,14 @@
+{
+  "config/emoji": "twemoji",
+  "config/auto-sync-settings": "true",
+  "config/truncate-proxy-name": "false",
+  "config/ipv6-test": "true",
+  "config/min-proxy-card-width": "256",
+  "config/display-global-by-mode": "true",
+  "config/auto-upgrade": "true",
+  "config/font": "SystemUI",
+  "config/auto-import-settings": "true",
+  "config/show-selected-for-now-node": "true",
+  "config/speedtest-url": "https://cp.cloudflare.com",
+  "config/independent-latency-test": "true"
+}
